@@ -11,7 +11,7 @@ root_dl_targz="pt-v1_targz"
 # Download train tars, will resume
 curr_dl=${root_dl_targz}/train
 [ ! -d $curr_dl ] && mkdir -p $curr_dl
-wget -c -i https://github.com/alvxrog/presentationtrainer-dataset/train/pt_v1_train_path.txt -P $curr_dl
+wget -c -i https://raw.githubusercontent.com/alvxrog/presentationtrainer-dataset/refs/heads/main/train/pt_v1_train_path.txt -P $curr_dl
 
 # Downloads complete
 echo -e "\nDownloads complete! Now run extractor, k700_2020_extractor.sh"
