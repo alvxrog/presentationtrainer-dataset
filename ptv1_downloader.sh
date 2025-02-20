@@ -16,7 +16,7 @@ wget -c -i https://raw.githubusercontent.com/alvxrog/presentationtrainer-dataset
 # Download validation tars, will resume
 curr_dl=${root_dl_targz}/val
 [ ! -d $curr_dl ] && mkdir -p $curr_dl
-wget -c -i https://s3.amazonaws.com/kinetics/700_2020/val/k700_2020_val_path.txt -P $curr_dl
+wget -c -i https://raw.githubusercontent.com/alvxrog/presentationtrainer-dataset/refs/heads/main/val/pt_v1_val_path.txt -P $curr_dl
 
 # We don't download test tars, as we will use the validation set as our test set 
 # (we won't do cross-validation)
