@@ -17,6 +17,14 @@ do
 	[[ $f == *.tar.gz ]] && echo Extracting $curr_dl/$f to $curr_extract && tar zxf $curr_dl/$f -C $curr_extract
 done
 
+# Move train instances from their directories to the root train directory
+find "$curr_extract" -type f -name '*.mp4' | while read vid; do
+    mv "$vid" "$curr_extract"
+done
+
+# Remove empty folders
+find "$curr_extract" -type d -empty -delete
+
 # Extract validation
 curr_dl=$root_dl_targz/val
 curr_extract=$root_dl/val
@@ -26,6 +34,14 @@ for f in $tar_list
 do
 	[[ $f == *.tar.gz ]] && echo Extracting $curr_dl/$f to $curr_extract && tar zxf $curr_dl/$f -C $curr_extract
 done
+
+# Move train instances from their directories to the root train directory
+find "$curr_extract" -type f -name '*.mp4' | while read vid; do
+    mv "$vid" "$curr_extract"
+done
+
+# Remove empty folders
+find "$curr_extract" -type d -empty -delete
 
 # Extract deep mind annotations
 curr_dl=$root_dl_targz/annotations/deepmind
