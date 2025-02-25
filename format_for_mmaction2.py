@@ -76,6 +76,6 @@ if __name__ == '__main__':
         # Cada línea tendrá el formato: <youtube_id> <class_num>
         with open(f"{split}.txt", "w") as f:
             for _, row in df.iterrows():
-                f.write(f"{row['youtube_id']} {int(row['class_num'])}\n")
+                f.write(f"{row['video_name']}.mp4 {int(row['class_num'])}\n")
 
         print(f"{split.capitalize()} completed!")
