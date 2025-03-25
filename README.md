@@ -1,6 +1,9 @@
 # Presentation Trainer Dataset Downloader
 This is a fork of the [CVD Foundation Kinetics Dataset Downloader](https://github.com/cvdfoundation/kinetics-dataset), with the original downloader and extractor scripts modified to obtain the Presentation Trainer Dataset. 
 
+> [!CAUTION]
+> At the moment, the video "5d9mIpws4cg_000130_000140.mp4" (on the train split) seems to be corrupted. We currently remove it from our train split manually. Be aware to do the same or the training will fail at some point (hopefully early enough to not curse me for live for not implementing it on the formatting script. I seriously hope no one reads this and I, at some point, implement it on the main preprocessing script)
+
 The Presentation Trainer Dataset was originally conceived as a subset of interesting classes from Kinetics-700 for our use case. Future progress on the evaluation model will probably see the appearence of new, domain-specific classes, which might be mixed with classes belonging to publicly-available of private datasets. As such, a modular script should be used to pull the different classes from a series of hosted tarfiles and extract them following a common format, as well as allow any individual that wishes to reproduce the training methodology or to generate their own model using a different action recognition architecture.
 
 Train, validation and test paths are changed to be bound to this repository (on train/test/validate folders). You are welcome to fork the repo and modify the downloaders to match your remote.
