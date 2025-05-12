@@ -4,7 +4,6 @@ https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_096.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_104.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_126.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_131.tar.gz
-https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_206.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_208.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_303.tar.gz
 https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_327.tar.gz
